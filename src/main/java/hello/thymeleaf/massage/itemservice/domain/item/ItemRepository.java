@@ -1,4 +1,4 @@
-package hello.thymeleaf.formstart.itemservice.domain.item;
+package hello.thymeleaf.massage.itemservice.domain.item;
 
 import org.springframework.stereotype.Repository;
 
@@ -9,6 +9,7 @@ import java.util.Map;
 
 @Repository
 public class ItemRepository {
+
     private static final Map<Long, Item> store = new HashMap<>(); //static
     private static long sequence = 0L; //static
 
@@ -31,10 +32,6 @@ public class ItemRepository {
         findItem.setItemName(updateParam.getItemName());
         findItem.setPrice(updateParam.getPrice());
         findItem.setQuantity(updateParam.getQuantity());
-        findItem.setOpen(updateParam.getOpen());
-        findItem.setRegions(updateParam.getRegions());
-        findItem.setItemType(updateParam.getItemType());
-        findItem.setDeliveryCode(updateParam.getDeliveryCode());
     }
 
     public void clearStore() {

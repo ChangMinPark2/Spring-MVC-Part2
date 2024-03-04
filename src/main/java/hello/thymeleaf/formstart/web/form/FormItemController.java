@@ -2,7 +2,7 @@ package hello.thymeleaf.formstart.web.form;
 
 import hello.thymeleaf.formstart.itemservice.domain.item.DeliveryCode;
 import hello.thymeleaf.formstart.itemservice.domain.item.Item;
-import hello.thymeleaf.formstart.itemservice.domain.item.ItemRepository;
+import hello.thymeleaf.formstart.itemservice.domain.item.Item2Repository;
 import hello.thymeleaf.formstart.itemservice.domain.item.ItemType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,7 +22,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class FormItemController {
 
-    private final ItemRepository itemRepository;
+    private final Item2Repository itemRepository;
 
     @ModelAttribute("regions")
     public Map<String, String> regions() {
