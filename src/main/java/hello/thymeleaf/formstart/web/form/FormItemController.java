@@ -1,7 +1,7 @@
-package hello.formstart.web.form;
+package hello.thymeleaf.formstart.web.form;
 
-import hello.formstart.itemservice.domain.item.Item;
-import hello.formstart.itemservice.domain.item.ItemRepository;
+import hello.thymeleaf.formstart.itemservice.domain.item.Item;
+import hello.thymeleaf.formstart.itemservice.domain.item.ItemRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

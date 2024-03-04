@@ -1,4 +1,4 @@
-package hello.formstart.itemservice.domain.item;
+package hello.thymeleaf.formstart.itemservice.domain.item;
 
 import lombok.Data;
 
