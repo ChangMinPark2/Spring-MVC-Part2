@@ -2,7 +2,7 @@ package hello.thymeleaf.massage.web.message;
 
 
 import hello.thymeleaf.massage.itemservice.domain.item.Item;
-import hello.thymeleaf.massage.itemservice.domain.item.ItemRepository;
+import hello.thymeleaf.massage.itemservice.domain.item.ItemRepository4;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class MessageItemController {
 
-    private final ItemRepository itemRepository;
+    private final ItemRepository4 itemRepository;
 
     @GetMapping
     public String items(Model model) {
