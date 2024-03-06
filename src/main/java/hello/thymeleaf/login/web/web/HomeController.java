@@ -96,6 +96,9 @@ public class HomeController {
         return "loginHome";
     }
 
+    /**
+     * member 가 있으면 로그인된 사용자로 인식
+     */
     @GetMapping("/")
     public String homeLoginV3ArgumentResolver(@Login Member loginMember, Model model) {
 
