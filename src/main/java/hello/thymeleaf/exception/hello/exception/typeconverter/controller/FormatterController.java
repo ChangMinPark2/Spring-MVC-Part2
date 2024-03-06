@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 
 @Controller
 public class FormatterController {
-
     @GetMapping("/formatter/edit")
     public String formatterForm(Model model) {
         Form form = new Form();
