@@ -3,6 +3,7 @@ package hello.thymeleaf.exception.hello.exception;
 import hello.thymeleaf.exception.hello.exception.filter.LogFilter;
 import hello.thymeleaf.exception.hello.exception.typeconverter.converter.IpPortToStringConverter;
 import hello.thymeleaf.exception.hello.exception.typeconverter.converter.StringToIpPortConverter;
+import hello.thymeleaf.exception.hello.exception.typeconverter.formatter.MyNumberFormatter;
 import hello.thymeleaf.login.web.web.interceptor.LogInterceptor;
 import jakarta.servlet.DispatcherType;
 import jakarta.servlet.Filter;
@@ -49,6 +50,6 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addConverter(new IpPortToStringConverter());
 
         //추가
-//        registry.addFormatter(new MyNumberFormatter());
+        registry.addFormatter(new MyNumberFormatter());
     }
 }
